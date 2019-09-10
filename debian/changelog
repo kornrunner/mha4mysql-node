@@ -1,3 +1,15 @@
+mha4mysql-node (0.59-0) squeeze; urgency=low
+
+  * SlaveUtil.pm: BC fix for super_read_only
+  * bin: purge relay logs: fixup use_hardlink
+  * Add missing debian build requirement
+  * Add missing rpm build requirements
+  * NodeUtil.pm: sort out version extraction
+  * Fix redundant argument error on sprintf in parse_mysql_major_version()
+  * Version 0.59
+
+ -- Boris Momčilović <boris.momcilovic@gmail.com>  Tue, 10 Sep 2109 00:00:00 +0000
+
 mha4mysql-node (0.58-0) squeeze; urgency=low
 
   * Several bugfixes

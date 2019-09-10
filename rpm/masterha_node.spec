@@ -1,6 +1,6 @@
 Summary: Master High Availability Manager and Tools for MySQL, Node Package
 Name: mha4mysql-node
-Version: 0.58
+Version: 0.59
 Release: 0%{?dist}
 License: GPL v2
 Vendor: DeNA Co.,Ltd.
@@ -57,6 +57,15 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root,-)
 
 %changelog
+* Tue Sep 10 2019 Boris Momčilović <boris.momcilovic@gmail.com>
+- SlaveUtil.pm: BC fix for super_read_only
+- bin: purge relay logs: fixup use_hardlink
+- Add missing debian build requirement
+- Add missing rpm build requirements
+- NodeUtil.pm: sort out version extraction
+- Fix redundant argument error on sprintf in parse_mysql_major_version()
+- Version 0.59
+
 * Thu Mar 22 2018 Kenny.Gryp <kenny@goss.be>
 - Several bugfixes
 - IPV6 support
@@ -64,8 +73,6 @@ rm -rf $RPM_BUILD_ROOT
 - enforce_storage_engine support
 - Version 0.58
 - With the help of Marcelo Altmann <marcelo.altmann@percona.com>
-
-
 
 * Sun May 31 2015 Yoshinori Matsunobu <Yoshinori.Matsunobu@gmail.com>
 - (Note: All changelogs are written here: http://code.google.com/p/mysql-master-ha/wiki/ReleaseNotes )
